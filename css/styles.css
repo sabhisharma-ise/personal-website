@@ -21,6 +21,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;    /* 40px/16px = 2.5 */
     padding-bottom: 10px;
+    font-weight: normal;
 }
 
 h3 {
@@ -63,10 +64,6 @@ a:hover {
     position: absolute;
     right: 300px;
     top: 40px;
-}
-
-.web-designer {
-    font-weight: normal;
 }
 
 .bottom-cloud {
