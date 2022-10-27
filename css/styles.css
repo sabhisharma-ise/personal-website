@@ -3,16 +3,22 @@
 /*******************************************TAG SELECTORS***********************************************/
 
 body {
+    /* setting default font color & familt for all the elements in the body */
     color: #40514E;
     font-family: 'Merriweather', serif;
+    /* Without setting margin of body/html as 0, your entire page 
+    may appear to have a margin from the edge of the browser. */
     margin: 0;
+    /* make all the elements in the body centered. */
     text-align: center;
 }
 
 h1 {
     color: #66BFBF;
     font-family: 'Sacramento', serif;
-    font-size: 5.625rem;    /* 90px/16px = 5.625 or 562.5% */
+    /* For the font values to not get added up (if we give font-size in say body tag also), 
+    try to use rem instead of em or %, while giving font-sizes */
+    font-size: 5.625rem;    /* 90px/16px = 5.625 */
     margin: 20px auto 0 auto;
 }
 
@@ -20,8 +26,8 @@ h2 {
     color: #66BFBF;
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;    /* 40px/16px = 2.5 */
-    padding-bottom: 10px;
     font-weight: normal;
+    padding-bottom: 10px;
 }
 
 h3 {
@@ -33,6 +39,8 @@ p {
     line-height: 2;
 }
 
+/* creates a horizontal rule with dots and of
+very small border-with */
 hr {
     border-color: #C6EBC5;
     border-style: dotted none none none;
@@ -48,6 +56,8 @@ a {
     text-decoration: none;
 }
 
+/* creates a hover effect (changes color when we hover over the element) 
+ No use currently, because we are using images as links. */
 a:hover {
     color: #EAF6F6;
 }
@@ -81,7 +91,9 @@ a:hover {
 }
 
 .introduction {
+    /* Since I'm changing the width, I have to use margin: auto; for centering the introduction */
     margin: auto;
+    /* makes the introduction more compact instead of a straight line. */
     width: 38%;
 }
 
@@ -92,7 +104,9 @@ a:hover {
 }
 
 .prog-img {
+    /* moving the img 10px upwards so as to align more properly with my description */
     bottom: 10px;
+    /* moves the images to the left of the description */
     float: left;
     margin-right: 30px;
     position: relative;
@@ -100,7 +114,9 @@ a:hover {
 }
 
 .webdev-img {
+    /* moving the img 10px upwards so as to align more properly with my description */
     bottom: 10px;
+    /* moves the images to the right of the description */
     float: right;
     margin-left: 30px;
     position: relative;
@@ -112,10 +128,13 @@ a:hover {
 }
 
 .contact-message2 {
+    /* for centering the element using auto (since I'm changing width of this element) & spacing out the message2 properly */
     margin: 50px auto 60px;
+    /* makes the introduction more compact instead of a straight line. */
     width: 45%;
 }
 
+/* Button generated from https://css3buttongenerator.com/ */
 .btn {
     background: #63c9c9;
     background-image: -webkit-linear-gradient(top, #63c9c9, #2fb5c4);
@@ -127,6 +146,7 @@ a:hover {
     -moz-border-radius: 28;
     border-radius: 28px;
     color: #ffffff;
+    /* changed the font-family acc to my document */
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -148,6 +168,7 @@ a:hover {
     padding: 50px 0 15px;
 }
 
+/* Not-in-use currently, just in case if I wanna switch from images links to original links */
 .footer-link {
     color: #41655e;
     font-size: 17px;
@@ -155,7 +176,6 @@ a:hover {
 
 .footer-img {
     width: 2%;
-    
 }
 
 .copyright {
